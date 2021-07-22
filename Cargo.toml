@@ -1,0 +1,9 @@
+[package]
+name = "win32"
+version = "0.1.0"
+description = "the Win32 API bindings in Rust"
+license = "Apache-2.0"
+edition = "2018"
+
+[features]
+shared-minwindef = []
