@@ -8,5 +8,8 @@
  * Copyright (c) 2021 HTG-YT
  */
 
+#[cfg(feature = "shared-basetsd")]
+pub mod basetsd;
+
 #[cfg(feature = "shared-minwindef")]
 pub mod minwindef;

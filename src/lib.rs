@@ -8,6 +8,6 @@
  * Copyright (c) 2021 HTG-YT
  */
 
-pub mod c;
+mod c;
 
 pub mod shared;
