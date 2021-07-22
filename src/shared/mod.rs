@@ -13,3 +13,6 @@ pub mod basetsd;
 
 #[cfg(feature = "shared-minwindef")]
 pub mod minwindef;
+
+#[cfg(feature = "shared-ntdef")]
+pub mod ntdef;

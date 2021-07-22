@@ -8,16 +8,22 @@
  * Copyright (c) 2021 HTG-YT
  */
 
-use crate::c::{
-    char,
-    float,
-    int,
-    long,
-    unsigned_char,
-    unsigned_int,
-    unsigned_long,
-    unsigned_short,
-    void
+use crate::{
+    c::{
+        char,
+        float,
+        int,
+        long,
+        unsigned_char,
+        unsigned_int,
+        unsigned_long,
+        unsigned_short,
+        void,
+    },
+    shared::basetsd::{
+        LONG_PTR,
+        UINT_PTR
+    }
 };
 
 pub type PSZ = *mut char;
@@ -58,3 +64,16 @@ pub type LPCVOID = *const void;
 pub type INT = int;
 pub type UINT = unsigned_int;
 pub type PUINT = *mut UINT;
+
+pub type WPARAM = UINT_PTR;
+pub type LPARAM = LONG_PTR;
+pub type LRESULT = LONG_PTR;
+
+#[inline]
+pub fn MAKEWORD(a: BYTE, b: BYTE) -> WORD {
+    (a as WORD) | ((b as WORD) << 8)
+}
+
+#[inline]
+pub fn MAKELONG(a: WORD, b: WORD) {
+}

@@ -8,6 +8,8 @@
  * Copyright (c) 2021 HTG-YT
  */
 
+#![allow(non_snake_case)]
+
 mod c;
 
 pub mod shared;

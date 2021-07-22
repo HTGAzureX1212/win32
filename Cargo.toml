@@ -8,3 +8,4 @@ edition = "2018"
 [features]
 shared-basetsd = []
 shared-minwindef = []
+shared-ntdef = []
